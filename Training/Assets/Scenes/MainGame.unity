@@ -257,6 +257,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631836}
   m_CullTransparentMesh: 1
+--- !u!1 &110019452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110019454}
+  - component: {fileID: 110019453}
+  m_Layer: 0
+  m_Name: Enum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &110019453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110019452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52cbd373eba56724d85b86b2f0844547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGameState: 0
+--- !u!4 &110019454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110019452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.6419983, y: 0.7924507, z: -5.346185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128873463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1209,7 @@ RectTransform:
   - {fileID: 1807988779}
   - {fileID: 734997317}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1256,8 +1300,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1537721264}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: buttonPlay
+        m_TargetAssemblyTypeName: GameManagers, Assembly-CSharp
+        m_MethodName: ButtonPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1502,8 +1546,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1537721264}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: buttonOpenSetting
+        m_TargetAssemblyTypeName: GameManagers, Assembly-CSharp
+        m_MethodName: ButtonOpenSetting
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1583,7 +1627,7 @@ Transform:
   m_Children:
   - {fileID: 1268752778}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1152494808
 BoxCollider2D:
@@ -1730,8 +1774,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1537721264}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: buttonBackMainMenu
+        m_TargetAssemblyTypeName: GameManagers, Assembly-CSharp
+        m_MethodName: ButtonBackMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1862,8 +1906,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1537721264}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: buttonBackMainMenu
+        m_TargetAssemblyTypeName: GameManagers, Assembly-CSharp
+        m_MethodName: ButtonBackMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2057,7 +2101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446783284
 GameObject:
@@ -2143,8 +2187,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1537721264}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: buttonPlay
+        m_TargetAssemblyTypeName: GameManagers, Assembly-CSharp
+        m_MethodName: ButtonPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2221,7 +2265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1537721264
 MonoBehaviour:
@@ -2235,11 +2279,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ff977177bdaa34ba943c00acafc796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameCurrentState: 0
   uiManager: {fileID: 1822212926}
   gamePlayControl: {fileID: 2118352615}
   playerControl: {fileID: 1152494810}
-  GameScore: 0
+  gameCurrentState: {fileID: 110019453}
+  gameScore: 0
 --- !u!1 &1546330515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,7 +2440,7 @@ Transform:
   - {fileID: 219684394}
   - {fileID: 1546330516}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1822212926
 MonoBehaviour:
@@ -2731,7 +2775,7 @@ Transform:
   m_Children:
   - {fileID: 203285331}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2118352615
 MonoBehaviour:
@@ -2745,8 +2789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7ed755b6a506e4caeba04408c2d3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1152494806}
-  obstacle: {fileID: 7197566548893834639, guid: b924d31ccebda2d48aa4cbe20a42dd61, type: 3}
+  player: {fileID: 1152494810}
+  obstaclePrefab: {fileID: 7197566548893834639, guid: b924d31ccebda2d48aa4cbe20a42dd61, type: 3}
   spawnLocation: 5
   timeSpawner: 2
   minMax: {x: -2.47, y: 3.88}

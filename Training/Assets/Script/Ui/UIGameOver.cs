@@ -1,12 +1,11 @@
 using UnityEngine;
 using TMPro;
 
-public class UIGameOver : MonoBehaviour
-{
+public class UIGameOver : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI textGameOver;
     public GameObject gameOverWindow;
-    public void setTextGameOver(int score){
-        textGameOver.text ="SCORE :"+"<br>"+ score;
+    public void SetTextGameOver(int score) {
+        textGameOver.text = "SCORE :" + "<br>" + score;
     }
 
 }
